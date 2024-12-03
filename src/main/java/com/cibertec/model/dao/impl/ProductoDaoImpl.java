@@ -74,6 +74,7 @@ public class ProductoDaoImpl  implements ProductoDao {
                 Connection connection = DBConnection.getConnector();
                 PreparedStatement statement = connection.prepareStatement(query);
                 ) {
+            //preparamos para usar la consulta con el parametro indicado
             statement.setInt(1,id);
             //creamos ahora si una variable que capture la consulta
             try(ResultSet result = statement.executeQuery()){

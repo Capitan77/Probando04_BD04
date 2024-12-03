@@ -41,6 +41,8 @@ public class ListadoProductosServlet extends HttpServlet {
             //recuperamos la lista y la almacenamos para asi poder enviarsela
             //al index.jsp
             request.setAttribute("listaProductos", productos);
+            //RequestDispatcher es una interfaz del SDK de Java EE 5 que se
+            // encarga de recibir solicitudes del cliente y enviarlas a un recurso en el servidor
             RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
             dispatcher.forward(request, resp);
 

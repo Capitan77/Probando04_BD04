@@ -23,7 +23,6 @@
         <% List<Producto> items = (List<Producto>) request.getAttribute("listaProductos"); %>
 
         <% for (Producto item : items) { %>
-
            <div class="col-md-4 d-inline p-2 ">
                  <div class="card border-secondary p-5 ">
                        <p><strong>Id:</strong>            <%= item.getId() %></p>
@@ -31,14 +30,11 @@
                        <p><strong>Precio:</strong>        <%= item.getPrecio() %></p>
                        <p><strong>Stock:</strong> S/      <%= item.getStock() %></p>
                        <p><strong>Descuento:</strong>     <%= item.getDescuento() %></p>
-                       <a class="btn btn-primary">Editar</a>
-                       <a class="btn btn-dark">Eliminar</a>
+                       <a class="btn btn-primary"> Editar</a>
+                       <a class="btn btn-dark">    Eliminar</a>
                  </div>
             </div>
-
         <% } %>
-
-
     </div>
 </body>
 </html>
