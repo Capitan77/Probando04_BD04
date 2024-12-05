@@ -115,6 +115,9 @@ public class ProductoDaoImpl  implements ProductoDao {
                 Connection connection = DBConnection.getConnector();
                 PreparedStatement statement = connection.prepareStatement(query);
         ){
+            // Connection: interfaz para implementar una sesión cliente-servidor con una base de datos.
+            // STATEMENT : sirve para procesar una sentencia SQL estática y obtener los resultados producidos por ella
+            // ResultSet : sirve para almacenar la consulta sql
 
             //colocamos statment para procesar la sentencia SQL y poder
             //introducir los atributos para el nuevo objeto
